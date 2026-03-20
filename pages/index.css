@@ -122,3 +122,13 @@
   white-space: nowrap;
   padding-right: 65px;
 }
+
+.content {
+  <-- Aquí puedes agregar estilos para el contenido principal de la página -->
+}
+.section {
+  <-- Aquí puedes agregar estilos para secciones específicas dentro del contenido -->
+}
+.footer {
+  <-- Aquí puedes agregar estilos para el pie de página -->
+}
