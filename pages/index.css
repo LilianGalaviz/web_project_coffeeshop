@@ -59,7 +59,7 @@
   flex-grow: 1;
 }
 
-.header-title {
+.header__title {
   font-family: "Noto Serif", "Times New Roman", serif;
   white-space: nowrap;
   font-style: italic;
