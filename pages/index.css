@@ -71,6 +71,7 @@
   font-weight: 400;
   line-height: 72px;
   padding-left: 50px;
+  margin-top: 183px;
 }
 .span-accent {
   font-family: "Inter", Arial, sans-serif;
@@ -86,12 +87,13 @@
 .header__description {
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 19px;
-  margin: 25px 0 0;
+  padding: 0 0;
   text-align: left;
   white-space: normal;
   max-width: 683px;
-  line-height: 30px;
-  margin-left: 40px;
+  position: absolute;
+  top: 400px;
+  left: 80px;
 }
 
 .header__image {
@@ -106,8 +108,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 80px 40px 50px;
+  padding: 0px 80px 40px 50px;
   z-index: 2;
+  margin-top: auto;
 }
 
 .header__paragraph {
@@ -197,7 +200,83 @@
 }
 
 .reservation {
-  /*Aquí puedes agregar estilos para secciones específicas dentro del contenido*/
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__title {
+  font-weight: 500;
+  font-size: 44px;
+  color: #000000;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.reservation__form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container__form {
+  max-width: 385px;
+  width: 100%;
+  border: none;
+  padding: 0;
+}
+
+.label__form {
+  font-size: 20px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input__form {
+  border-radius: 4px;
+  margin-bottom: 32px;
+  height: 60px;
+  width: 100%;
+  color: #838383;
+  padding: 15px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 1px solid #838383;
+}
+
+.button__submit {
+  background-color: #2f80ed;
+  border-radius: 4px;
+  height: 60px;
+  max-width: 385px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 32px;
+  border: none;
+}
+
+.button__submit:hover {
+  opacity: 70%;
+}
+
+.checkbox__form {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.label__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .footer {

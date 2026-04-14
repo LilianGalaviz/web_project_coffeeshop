@@ -51,8 +51,8 @@
           Café de especialidad<span class="span-accent">en Triple Peaks</span>
         </h1>
         <p class="header__description">
-          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-          para darte energía y motivar tu creatividad.
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
+          café<br />para darte energía y motivar tu creatividad.
         </p>
         <img
           src="./images/inside_coffee_shop.png"
@@ -137,7 +137,64 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="reservation__form">
+            <fieldset class="container__form">
+              <label for="nombre" class="label__form">Nombre *</label>
+              <input
+                type="text"
+                minlength="3"
+                maxlength="30"
+                class="input__form"
+                id="nombre"
+                placeholder="Nombre"
+                required
+              />
+              <label for="comensales" class="label__form">Comensales *</label>
+              <input
+                type="number"
+                min="1"
+                max="8"
+                class="input__form"
+                id="comensales"
+                placeholder="1-8"
+                required
+              />
+              <label for="fechayhora" class="label__form">Fecha y hora *</label>
+              <input
+                type="datetime-local"
+                class="input__form"
+                id="fechayhora"
+                required
+              />
+              <label for="email" class="label__form"
+                >Tu correo electrónico*</label
+              >
+              <input
+                type="email"
+                class="input__form"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+              <button type="submit" class="button__submit">
+                Reservar una mesa
+              </button>
+              <label for="terminosdeuso" class="label__form">
+                <input
+                  type="checkbox"
+                  name="terminosdeuso"
+                  id="terminosdeuso"
+                  class="checkbox__form"
+                  required
+                />
+                Acepto los términos de uso</label
+              >
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
